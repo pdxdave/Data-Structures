@@ -6,13 +6,17 @@ class Queue:
   def __init__(self):
     self.size = 0
     # Why is our DLL a good choice to store our elements?
-    self.storage = 
-
+    self.storage = []
+    
   def enqueue(self, value):
-    pass
+    self.storage.insert(0, value)
+    self.size += 1
   
   def dequeue(self):
-    pass
+    if len(self.storage) == 0:
+      return None
+    else:
+      return self.storage.pop()
 
   def len(self):
-    pass
+    return len(self.storage)
