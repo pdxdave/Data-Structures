@@ -216,7 +216,17 @@ class LRUCache:
          self.current_size += 1
       # If the key doesn't already exists, put it at the front
 
-
+# cache_test = LRUCache(5)
+# cache_test.set(5, 10)
+# cache_test.set(7, 11)
+# cache_test.set(9, 5)
+# cache_test.set(3, 11)
+# cache_test.set(11, 5)
+# cache_test.set(4, 11)
+# cache_test.set(8, 5)
+# print(cache_test.fast_access)
+# print("head", cache_test.order.head.value)
+# print("tail", cache_test.order.tail.value)
 
 
 
